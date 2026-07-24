@@ -7,7 +7,21 @@ An AI-powered Movie Recommendation System built using **Machine Learning**, **St
 👉 https://movie-recommendation-system-nncigygaugzcfo7pztyhk2.streamlit.app
 
 ---
+## 📸 Screenshots
 
+### 🏠 Home
+![Home](images/home.png)
+
+### 🔥 Recommendations
+![Recommendations](images/recommendations.png)
+
+### 🎬 Movie Details
+![Movie Details](images/movie-details.png)
+
+### 🤖 AI Features
+![AI Features](images/ai-features.png)
+
+---
 ## ✨ Features
 
 - 🎥 Movie Recommendation using Content-Based Filtering
