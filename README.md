@@ -2,26 +2,27 @@
 
 An AI-powered Movie Recommendation System built using **Machine Learning**, **Streamlit**, **TMDB API**, and **Google Gemini AI**.
 
-The application recommends similar movies based on content similarity and provides AI-powered insights such as movie summaries, reviews, fun facts, recommendation explanations, and interactive movie Q&A.
+## 🌐 Live Demo
+
+👉 https://movie-recommendation-system-nncigygaugzcfo7pztyhk2.streamlit.app
 
 ---
 
-# ✨ Features
+## ✨ Features
 
-- 🎬 Content-Based Movie Recommendation
-- 🤖 AI Movie Summary
+- 🎥 Movie Recommendation using Content-Based Filtering
+- 🤖 AI Movie Summary (Google Gemini)
 - 💬 Ask AI about any movie
-- 🎉 AI Fun Facts
-- ⭐ AI Movie Reviews
-- 🧠 Why Recommended? (AI Explanation)
-- 🎥 Movie Details (Poster, Cast, Director, Genres & Rating)
-- 🔥 Top 5 Similar Movie Recommendations
-- 🌐 Real-time TMDB API Integration
-- 🎨 Modern Dark UI with Streamlit
+- ⭐ AI Movie Review
+- 🎉 Fun Facts about Movies
+- 🧠 AI Explanation for Recommendations
+- 🎭 Movie Details from TMDB API
+- 📷 Movie Posters
+- 🌙 Modern Dark UI
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 - Python
 - Streamlit
@@ -30,66 +31,45 @@ The application recommends similar movies based on content similarity and provid
 - NumPy
 - TMDB API
 - Google Gemini AI
+- Git & GitHub
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
-```text
-Movie-Recommendation-System/
+```
+Movie-Recommendation-System
 │
 ├── app.py
 ├── recommendation_engine.py
 ├── tmdb.py
 ├── utils.py
 ├── create_pickle.py
+├── requirements.txt
 ├── movies.pkl
 ├── similarity.pkl
-├── requirements.txt
-├── README.md
 ├── tmdb_5000_movies.csv
 ├── tmdb_5000_credits.csv
-└── .streamlit/
+└── README.md
 ```
 
 ---
 
-# ⚙️ Installation
+## 🚀 Installation
 
-### Clone the repository
+Clone the repository
 
 ```bash
 git clone https://github.com/shreesha-shetty8/Movie-Recommendation-System.git
 ```
 
-### Go to the project folder
-
-```bash
-cd Movie-Recommendation-System
-```
-
-### Install dependencies
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Add API Keys
-
-Create the following file:
-
-```text
-.streamlit/secrets.toml
-```
-
-Add your API keys:
-
-```toml
-GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
-TMDB_API_KEY="YOUR_TMDB_API_KEY"
-```
-
-### Run the application
+Run the app
 
 ```bash
 streamlit run app.py
@@ -97,30 +77,29 @@ streamlit run app.py
 
 ---
 
-# 📸 Screenshots
+## 🔑 Environment Variables
 
-> Add screenshots of the application here after deployment.
+Create a `.streamlit/secrets.toml` file.
 
----
-
-# 🚀 Future Enhancements
-
-- 👤 User Authentication
-- ❤️ Favorite Movies
-- 📺 Watchlist
-- 🎞️ Movie Trailer Integration
-- 🤝 Hybrid Recommendation System
-- 📈 Personalized Recommendations
+```toml
+TMDB_API_KEY="YOUR_TMDB_API_KEY"
+GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+```
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Developer
 
 **Shreesha Shetty**
 
-- 🐙 GitHub: https://github.com/shreesha-shetty8
-- 💼 LinkedIn: https://www.linkedin.com/in/shreesha-shetty8/
+GitHub:
+https://github.com/shreesha-shetty8
+
+LinkedIn:
+https://www.linkedin.com/in/shreesha-shetty8/
 
 ---
 
-⭐ If you like this project, consider giving it a **Star** on GitHub!
+## ⭐ If you like this project
+
+Please give this repository a ⭐ on GitHub.
