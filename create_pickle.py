@@ -2,7 +2,7 @@ import pandas as pd
 import pickle
 import ast
 import nltk
-
+import numpy as np
 from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -75,7 +75,7 @@ movies = pd.read_csv("tmdb_5000_movies.csv")
 credits = pd.read_csv("tmdb_5000_credits.csv")
 
 movies = movies.merge(credits, on="title")
-
+movies = movies.head(1000)
 # -----------------------------
 # Keep Useful Columns
 # -----------------------------
@@ -151,7 +151,10 @@ cv = CountVectorizer(
 
 vectors = cv.fit_transform(new_movies["tags"]).toarray()
 
-similarity = cosine_similarity(vectors)
+import numpy as np
+
+similarity = cosine_similarity(vectors).astype(np.float32)
+
 
 # -----------------------------
 # Save Pickle Files

@@ -7,5 +7,3 @@ venv/
 
 .streamlit/secrets.toml
 
-movies.pkl
-similarity.pkl
